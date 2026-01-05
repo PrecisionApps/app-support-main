@@ -2,24 +2,25 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Book Writer One – AI Book Writing - Support</title>
-<meta name="description" content="Book Writer One app support. AI-powered writing assistant for creating and organizing book content. Secure processing.">
+<title>Kaan YILDIZ Apps – Support Center</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Support center for Kaan YILDIZ iOS apps: Astrin, Cleanie, EpiAlert, Spiko, AI Book Writer, Roast, Sunshade, Nutrai, NoGluto.">
 <link rel="icon" href="favicon.ico">
 <style>
   :root {
-    --bg-start: #1a0a14;
-    --bg-mid: #2d1422;
-    --bg-end: #1f0f1a;
-    --fg: #fdf2f5;
-    --fg-soft: #e8d5dc;
-    --accent: #ff8fa3;
-    --accent-hover: #ffb3c1;
-    --accent-warm: #ffc2a8;
-    --card: rgba(255, 143, 163, 0.06);
-    --card-hover: rgba(255, 143, 163, 0.12);
-    --line: rgba(255, 143, 163, 0.15);
+    --bg-start: #0a0f1a;
+    --bg-mid: #141f33;
+    --bg-end: #0f1828;
+    --fg: #f2f5fd;
+    --fg-soft: #d5dce8;
+    --accent: #a78bfa;
+    --accent-hover: #c4b5fd;
+    --accent-warm: #b8a3fc;
+    --card: rgba(167, 139, 250, 0.06);
+    --card-hover: rgba(167, 139, 250, 0.12);
+    --line: rgba(167, 139, 250, 0.15);
     --shadow: rgba(0, 0, 0, 0.4);
-    --glow: rgba(255, 143, 163, 0.3);
+    --glow: rgba(167, 139, 250, 0.3);
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
@@ -35,14 +36,14 @@
     position: fixed;
     inset: 0;
     background: 
-      radial-gradient(ellipse 80% 50% at 20% 20%, rgba(255, 143, 163, 0.12) 0%, transparent 60%),
-      radial-gradient(ellipse 60% 40% at 85% 75%, rgba(255, 194, 168, 0.1) 0%, transparent 55%);
+      radial-gradient(ellipse 80% 50% at 20% 20%, rgba(167, 139, 250, 0.12) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 40% at 85% 75%, rgba(184, 163, 252, 0.1) 0%, transparent 55%);
     pointer-events: none;
     z-index: 0;
   }
   @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
   @keyframes shimmer { 0% { background-position: -200% center; } 100% { background-position: 200% center; } }
-  .wrap { max-width: 1100px; margin: 0 auto; padding: 80px 24px; position: relative; z-index: 1; }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 80px 24px; position: relative; z-index: 1; }
   header { text-align: center; margin-bottom: 48px; }
   .app-icon { font-size: 80px; margin-bottom: 20px; display: inline-block; animation: float 4s ease-in-out infinite; filter: drop-shadow(0 8px 24px var(--glow)); }
   h1 {
@@ -57,22 +58,27 @@
     letter-spacing: -0.03em;
     animation: shimmer 4s linear infinite;
   }
-  .subtitle { font-size: 1.25rem; color: var(--fg-soft); max-width: 560px; margin: 0 auto 24px; }
-  .disclaimer-hero {
-    background: linear-gradient(135deg, rgba(255, 100, 120, 0.15) 0%, rgba(255, 143, 163, 0.08) 100%);
-    border: 1px solid rgba(255, 100, 120, 0.3);
-    border-radius: 16px;
-    padding: 20px 28px;
-    max-width: 760px;
-    margin: 0 auto;
-    backdrop-filter: blur(12px);
-  }
-  .disclaimer-hero p { margin: 0; font-size: 0.95rem; line-height: 1.6; color: var(--fg-soft); }
-  .disclaimer-hero strong { color: var(--accent); }
+  .subtitle { font-size: 1.25rem; color: var(--fg-soft); max-width: 600px; margin: 0 auto 24px; }
   h2 { font-size: 1.5rem; font-weight: 700; margin: 56px 0 28px; color: var(--accent); }
+  h3 { font-size: 1.2rem; font-weight: 600; margin: 0 0 12px; color: var(--fg); }
   p { margin: 12px 0; line-height: 1.75; color: var(--fg-soft); }
   a { color: var(--accent); text-decoration: none; transition: all 0.25s ease; }
   a:hover { color: var(--accent-hover); text-decoration: underline; }
+  .apps-grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin-bottom: 40px; }
+  .app-card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 24px;
+    backdrop-filter: blur(16px);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 20px var(--shadow);
+    text-align: center;
+  }
+  .app-card:hover { background: var(--card-hover); transform: translateY(-4px); box-shadow: 0 12px 40px var(--shadow); }
+  .app-card-icon { font-size: 48px; margin-bottom: 12px; display: block; }
+  .app-card h3 { margin: 0 0 8px; }
+  .app-card p { font-size: 0.9rem; margin: 0; }
   .grid { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); margin-bottom: 40px; }
   .card {
     background: var(--card);
@@ -96,9 +102,9 @@
     font-weight: 600;
     transition: all 0.3s ease;
     margin-top: 12px;
-    box-shadow: 0 4px 16px rgba(255, 143, 163, 0.3);
+    box-shadow: 0 4px 16px rgba(167, 139, 250, 0.3);
   }
-  .btn:hover { transform: translateY(-2px) scale(1.02); box-shadow: 0 8px 28px rgba(255, 143, 163, 0.4); text-decoration: none; }
+  .btn:hover { transform: translateY(-2px) scale(1.02); box-shadow: 0 8px 28px rgba(167, 139, 250, 0.4); text-decoration: none; }
   details { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 24px; margin: 16px 0; backdrop-filter: blur(12px); transition: all 0.3s ease; }
   details:hover { background: var(--card-hover); }
   details[open] { background: var(--card-hover); }
@@ -107,33 +113,78 @@
   summary::before { content: '✦'; display: inline-block; transition: transform 0.3s ease; font-size: 0.8rem; }
   details[open] summary::before { transform: rotate(90deg); }
   details p { margin-top: 16px; padding-left: 24px; }
-  .warning-box { background: linear-gradient(135deg, rgba(255, 100, 120, 0.12) 0%, rgba(255, 143, 163, 0.06) 100%); border-left: 3px solid var(--accent); border-radius: 0 12px 12px 0; padding: 16px 20px; margin: 16px 0; font-size: 0.9rem; }
-  .warning-box strong { color: var(--accent); }
   .muted { opacity: 0.65; font-size: 0.875rem; }
   footer { margin-top: 80px; padding-top: 40px; border-top: 1px solid var(--line); text-align: center; }
   footer p { opacity: 0.7; font-size: 0.9rem; }
-  .footer-disclaimer { max-width: 800px; margin: 24px auto 0; padding: 20px; background: rgba(255, 100, 120, 0.08); border-radius: 12px; font-size: 0.8rem; line-height: 1.6; opacity: 0.8; }
-  @media (max-width: 768px) { h1 { font-size: 2.25rem; } .grid { grid-template-columns: 1fr; } .wrap { padding: 56px 20px; } .app-icon { font-size: 64px; } }
+  .footer-disclaimer { max-width: 800px; margin: 24px auto 0; padding: 20px; background: rgba(167, 139, 250, 0.08); border-radius: 12px; font-size: 0.8rem; line-height: 1.6; opacity: 0.8; }
+  @media (max-width: 768px) { h1 { font-size: 2.25rem; } .grid { grid-template-columns: 1fr; } .apps-grid { grid-template-columns: repeat(2, 1fr); } .wrap { padding: 56px 20px; } .app-icon { font-size: 64px; } }
+  @media (max-width: 480px) { .apps-grid { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <div class="app-icon">📖</div>
-      <h1>Book Writer One</h1>
-      <p class="subtitle">AI-Powered Book Writing Assistant</p>
-      <div class="disclaimer-hero">
-        <p><strong>⚠️ Important Notice:</strong> Book Writer One processes <strong>text content for writing assistance ONLY</strong>. This app does NOT store user content permanently, collect personal information beyond what's necessary for functionality, or share data with third parties without consent. All processing is for writing enhancement purposes. For sensitive content, use secure storage solutions.</p>
-      </div>
+      <div class="app-icon">📱</div>
+      <h1>App Support Center</h1>
+      <p class="subtitle">Privacy policies, terms of service, and support for all Kaan YILDIZ iOS applications</p>
     </header>
+
+    <h2>Our Apps</h2>
+    <div class="apps-grid">
+      <div class="app-card">
+        <span class="app-card-icon">⭐</span>
+        <h3>Astrin</h3>
+        <p>Astrology & Horoscopes</p>
+      </div>
+      <div class="app-card">
+        <span class="app-card-icon">🧹</span>
+        <h3>Cleanie</h3>
+        <p>Storage Cleaner</p>
+      </div>
+      <div class="app-card">
+        <span class="app-card-icon">🧠</span>
+        <h3>EpiAlert</h3>
+        <p>Migraine Tracker</p>
+      </div>
+      <div class="app-card">
+        <span class="app-card-icon">💬</span>
+        <h3>Spiko</h3>
+        <p>AAC Communication</p>
+      </div>
+      <div class="app-card">
+        <span class="app-card-icon">📖</span>
+        <h3>AI Book Writer</h3>
+        <p>Writing Assistant</p>
+      </div>
+      <div class="app-card">
+        <span class="app-card-icon">🔥</span>
+        <h3>Roast</h3>
+        <p>Fun Roast Generator</p>
+      </div>
+      <div class="app-card">
+        <span class="app-card-icon">☀️</span>
+        <h3>Sunshade</h3>
+        <p>Tanning Timer</p>
+      </div>
+      <div class="app-card">
+        <span class="app-card-icon">🥗</span>
+        <h3>Nutrai</h3>
+        <p>Calorie Tracker</p>
+      </div>
+      <div class="app-card">
+        <span class="app-card-icon">🌾</span>
+        <h3>NoGluto</h3>
+        <p>Gluten-Free Guide</p>
+      </div>
+    </div>
 
     <div class="grid">
       <div class="card">
         <span class="card-icon">💬</span>
         <h2>Contact Support</h2>
-        <p>Need help with Book Writer One? We're here for app-related questions:</p>
-        <p><strong>Email:</strong><br><a href="mailto:kaanyildiz.iosdev@gmail.com?subject=Book%20Writer%20One%20Support">kaanyildiz.iosdev@gmail.com</a></p>
-        <p class="muted">Developer: Kaan YILDIZ. Note: Support cannot provide writing advice—please consult professional editors for content review.</p>
+        <p>Need help with any of our apps? We're here for you:</p>
+        <p><strong>Email:</strong><br><a href="mailto:kaanyildiz.iosdev@gmail.com?subject=App%20Support">kaanyildiz.iosdev@gmail.com</a></p>
+        <p class="muted">Developer: Kaan YILDIZ. Please include your app name in the subject line.</p>
       </div>
       
       <div class="card">
@@ -146,61 +197,41 @@
       
       <div class="card">
         <span class="card-icon">📋</span>
-        <h2>Quick Links</h2>
-        <p><a href="./privacy.html">Privacy Policy</a></p>
-        <p><a href="./terms.html">Terms of Service</a></p>
+        <h2>Legal Documents</h2>
+        <p><a href="./privacy.html">Privacy Policy</a> – All apps</p>
+        <p><a href="./terms.html">Terms of Service</a> – All apps</p>
         <p><a href="https://apps.apple.com/account/subscriptions" target="_blank" rel="noopener">Manage Subscriptions</a></p>
-        <p class="muted">No user content stored permanently. See Privacy Policy for details.</p>
+        <p class="muted">These policies apply to all apps listed above.</p>
       </div>
     </div>
 
     <h2>Frequently Asked Questions</h2>
     
     <details>
-      <summary>What is Book Writer One?</summary>
-      <p>Book Writer One is an AI-powered app that helps you <strong>create and organize book content</strong> you write. The app uses AI to assist with writing enhancement, organization, and content generation for your books.</p>
-      <div class="warning-box"><strong>⚠️ Writing Assistance Only:</strong> Book Writer One processes text content for writing assistance. It does NOT store user content permanently or share data without consent.</div>
-    </details>
-    
-    <details>
-      <summary>How does the AI assistance work?</summary>
-      <p>When you input text, your <strong>content</strong> is sent to our secure backend to be processed by a large language model (LLM). The AI analyzes your writing to provide suggestions, improvements, and organizational help for your book content.</p>
-      <div class="warning-box"><strong>⚠️ Writing Enhancement Only:</strong> The AI provides writing assistance only. It does NOT store content permanently or use it for training without consent.</div>
-    </details>
-    
-    <details>
-      <summary>What happens to my text content?</summary>
-      <p>Your <strong>text content</strong> is sent to our secure backend to be processed by a large language model (LLM) for writing assistance. Content is <strong>not permanently stored</strong> in databases and is <strong>not used to train AI models</strong> without consent.</p>
-      <div class="warning-box"><strong>🔒 No Permanent Storage:</strong> We do NOT store user content permanently. Only the text you input is processed temporarily for writing enhancement.</div>
-    </details>
-    
-    <details>
-      <summary>Does Book Writer One store my content?</summary>
-      <p><strong>NO.</strong> Book Writer One processes <strong>text content for writing assistance ONLY</strong>. This app does NOT:</p>
-      <ul style="padding-left: 24px; margin-top: 12px;">
-        <li>Store user content permanently</li>
-        <li>Collect personal information beyond what's necessary</li>
-        <li>Share data with third parties without consent</li>
-        <li>Use content for training AI models without permission</li>
-      </ul>
-      <div class="warning-box"><strong>⚠️ Writing Enhancement Purposes Only:</strong> All processing is for writing assistance. For sensitive content, use secure storage solutions.</div>
-    </details>
-    
-    <details>
-      <summary>How do I restore purchases?</summary>
-      <p>Open Book Writer One → Settings → Restore Purchases. Ensure you're signed in with the same Apple ID used for the original purchase. If issues persist, contact support.</p>
+      <summary>How do I restore my purchases?</summary>
+      <p>Open the app → Settings → Restore Purchases. Ensure you're signed in with the same Apple ID used for the original purchase. If issues persist, contact support with your app name and Apple ID email.</p>
     </details>
     
     <details>
       <summary>How do I cancel my subscription?</summary>
-      <p>Open iOS Settings → [Your Name] → Subscriptions → Book Writer One → Cancel Subscription. Or visit <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>.</p>
+      <p>Open iOS Settings → [Your Name] → Subscriptions → Select the app → Cancel Subscription. Or visit <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>.</p>
+    </details>
+    
+    <details>
+      <summary>Is my data stored permanently?</summary>
+      <p><strong>NO.</strong> We do NOT store user data permanently on external servers. Data is processed temporarily for app functionality and stored locally on your device only. See our <a href="./privacy.html">Privacy Policy</a> for details.</p>
+    </details>
+    
+    <details>
+      <summary>Do you share my data with third parties?</summary>
+      <p><strong>NO.</strong> We do NOT share your personal data with third parties without your consent. Third-party services (like Apple for payments) are governed by their own privacy policies.</p>
     </details>
 
     <footer>
       <p>© 2025 Kaan YILDIZ. All rights reserved.</p>
       <p><a href="./privacy.html">Privacy Policy</a> · <a href="./terms.html">Terms of Service</a></p>
       <div class="footer-disclaimer">
-        <strong>⚠️ WRITING ASSISTANCE ONLY:</strong> Book Writer One processes text content for writing assistance ONLY. This app does NOT store user content permanently, collect personal information beyond what's necessary, or share data with third parties without consent. <strong>NO USER CONTENT IS STORED PERMANENTLY</strong>—we do not retain text content after processing. Your input is sent to our secure backend for writing enhancement only. For sensitive content, use secure storage solutions. Book Writer One is not affiliated with Apple Inc. or any writing services.
+        This support page covers all Kaan YILDIZ iOS applications. Each app may have specific functionality disclaimers—please refer to the individual app descriptions and in-app notices. Apps are not affiliated with Apple Inc. For medical, health, or nutrition apps, always consult qualified professionals.
       </div>
     </footer>
   </div>
